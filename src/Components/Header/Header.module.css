@@ -1,0 +1,28 @@
+.Header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color:  #222531;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.HeaderLogo {
+  grid-column: span 4 / auto;
+}
+
+.HeaderNavbar {
+  grid-column: span 8 / auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.HeaderNavbar__item {
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #7ac6df;
+}
