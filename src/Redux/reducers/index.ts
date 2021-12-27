@@ -1,1 +1,1 @@
-
+export { cryptoReducer } from './crypto';
