@@ -1,0 +1,13 @@
+.Application {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+}
+
+.Application__Container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+}
