@@ -1,0 +1,1 @@
+export { CryptocurrenciesPage } from './CryptocurrenciesPage';
