@@ -1,23 +1,23 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { MainPage } from '../Pages';
+import { HomePage, CryptocurrenciesPage, ExchangesPage } from '../Pages';
 
 export enum RouteNames {
-  MAIN = '/',
-  // LOGIN = '/login',
-  // ABOUT = '/about',
+  HOME = '/',
+  CRYPTOCURRENCIES = '/cryptocurrencies',
+  EXCHANGES = '/exchanges',
+  NEWS = '/news',
 }
 
 export const RootRoutes: React.FC = () => {
   return (
     <Routes>
-      <Route path={RouteNames.MAIN} element={<MainPage />} />
-      {/* <Route path="/" element={<App />} /> */}
+      <Route path={RouteNames.HOME} element={<HomePage />} />
+      <Route path={RouteNames.CRYPTOCURRENCIES} element={<CryptocurrenciesPage />} />
+      <Route path={RouteNames.EXCHANGES} element={<ExchangesPage />} />
 
-      {/* <Navigate to={RouteNames.MAIN} replace={true} /> */}
-      <Route path="*" element={<Navigate replace to={RouteNames.MAIN} />} />
+      <Route path="*" element={<Navigate replace to={RouteNames.HOME} />} />
+
     </Routes>
   );
 };
-
-{/* <Link to="/expenses">Expenses</Link> */ }
