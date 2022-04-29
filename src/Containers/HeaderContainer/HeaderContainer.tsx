@@ -8,11 +8,11 @@ export const HeaderContainer: React.FC = () => {
   const { cryptoList } = useAppSelector((state) => state.crypto);
   const dispatch = useAppDispatch();
 
-  // React.useEffect(() => {
-  //   dispatch(getCryptoList({ limit: 100 }))
-  //     .then(() => setIsLoading(false))
-  //     .catch(() => setIsLoading(false));
-  // }, []);
+  React.useEffect(() => {
+    dispatch(getCryptoList({ limit: 100 }))
+      .then(() => setIsLoading(false))
+      .catch(() => setIsLoading(false));
+  }, []);
 
   const routes = {
     home: '/',

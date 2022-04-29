@@ -35,7 +35,11 @@
 		"react/react-in-jsx-scope": "off",
 		"react/display-name": "off",
 		"react/prop-types": "off",
-		"indent": [
+		"import/order": ["error", {
+			"groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
+			"newlines-between": "always-and-inside-groups"
+		}]
+		'indent': [
 			"error",
 			"tab",
 			{

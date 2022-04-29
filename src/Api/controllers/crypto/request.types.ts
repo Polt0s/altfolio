@@ -3,10 +3,6 @@ export interface IGetCryptoList {
   limit?: number;
 }
 
-export interface IGetExchangesList {
-  limit?: number;
-}
-
 export interface IGetCryptoDetails {
   coinId: number | null;
 }

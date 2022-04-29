@@ -2,7 +2,7 @@ import { getCryptoList } from './api.actions';
 
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState: IRecordingState = {
+const initialState: ICryptoState = {
   cryptoList: [],
   isLoading: false,
 };
@@ -22,7 +22,7 @@ const cryptoSlice = createSlice({
 
 export const cryptoReducer = cryptoSlice.reducer;
 
-export interface IRecordingState {
+export interface ICryptoState {
   cryptoList: any;
   isLoading: boolean;
 }

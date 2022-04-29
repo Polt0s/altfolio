@@ -1,0 +1,46 @@
+.Label {
+ position: relative;
+}
+
+.Label input {
+  font-size: 1.1rem;
+  background: #f1f7fe;
+  color: #052a4e;
+  outline: none;
+  padding: 1rem 1.15rem;
+  width: 25rem;
+  border-radius: 10px;
+  border:  2px solid rgba(5, 42, 78, 0.2);
+  transition: border-color 0.4s ease;
+  cursor: pointer;
+}
+
+.Label input:focus {
+  border-color: #0f81f0;
+}
+
+.Label p {
+  color: rgba(5, 42, 78, 0.5);
+  font-size: 1.2rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  margin-left: 0.8rem;
+  padding: 0 0.5rem;
+  background: #F1F7FE;
+  transition-property: top, font-size, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.Label input:focus + p, .Label input:not(:placeholder-shown) + p {
+  top: -15px;
+  font-size: 0.95rem;
+  color: #0F81F0;
+  background: #fff;
+}
+
+.Label input:not(:focus) + p {
+  color: rgba(5, 42, 78, 0.5);
+}
